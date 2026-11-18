@@ -1,0 +1,26 @@
+{
+  "name": "employee-support-ticket-app",
+  "version": "1.0.0",
+  "description": "Employee Support Ticket Management Application",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "test": "node tests/test_e2e_regression.js",
+    "test:all": "node tests/verify_suite.js && node tests/test_auth.js && node tests/test_employee_dashboard.js && node tests/test_ticket_creation.js && node tests/test_ticket_detail.js && node tests/test_support_dashboard.js && node tests/test_ticket_status.js && node tests/test_comments.js && node tests/test_validation_access_control.js && node tests/test_e2e_regression.js"
+  },
+  "keywords": [
+    "ticket-system",
+    "support",
+    "employee-management"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "sqlite3": "^5.1.7"
+  }
+}
